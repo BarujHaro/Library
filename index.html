@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>Library</title>
+</head>
+<body>
+    <div class="mainCont">
+        <div class="title">
+            <h1>Library</h1>
+        </div>
+        <div class="addButton">
+            <button type="button" onclick="popup()">Add book</button>
+        </div>
+        <div id="overlay"></div>
+        <div id="popupForm" class="popupForm">
+            <form action="#" class="form-cont">
+                <h2>Add new book</h2>
+                <label for="text"><b>Title</b></label>
+                <input type="text" placeholder="title" name="title" id="title" required>
+    
+                <label for="text"><b>Author</b></label>
+                <input type="text" placeholder="author" name="author" id="author" required>
+    
+                <label for="text"><b>Pages</b></label>
+                <input type="number" name="pages" id="pages" required>
+               
+                <div class="radio-container">
+                    <input type="radio" id="choice1" name="isRead" class="radio-input" value="Read" required>
+                    <div class="radio-design"></div>
+                    <label for="choice1" class="label-text">Is read</label>
+                  </div>
+                  
+                  <div class="radio-container">
+                    <input type="radio" id="choice2" name="isRead" class="radio-input" value="NotRead" required>
+                    <div class="radio-design"></div>
+                    <label for="choice2" class="label-text">Is not read</label>
+                  </div>
+
+                <div class="addButton">
+                    <button type="button" class="btn-add" onclick="addBook()">Add book</button>
+                </div>
+                
+            </form>
+            <div class="addButton">
+                <button onclick="closeForm()">
+                    Close
+                </button>
+            </div>    
+        </div>
+        <div class="libraryCont">
+    
+        </div>
+
+    </div>
+
+
+    
+
+    <script src="scripts.js"></script>
+</body>
+</html>
